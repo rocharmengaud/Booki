@@ -81,10 +81,6 @@ header {
   margin: 0 auto;
 }
 
-header {
-  padding: 0 30px;
-}
-
 section,
 footer {
   padding: 20px 20px;
@@ -102,13 +98,8 @@ body > footer {
 }
 
 /* ------------------- NAVBAR -------------------- */
-nav .website-logo {
-  flex-grow: 1;
-}
-
 nav.navbar-wrapper {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
 
   background-color: #f2f2f2;
@@ -116,43 +107,72 @@ nav.navbar-wrapper {
 
 @media (min-width: 1024px) {
   .navbar-wrapper {
+    align-items: center;
     width: 100%;
     max-width: 1600px;
   }
 }
 
+nav .website-logo img {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+  nav .website-logo img {
+    margin: 0;
+  }
+}
+
 nav .nav-buttons {
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  gap: 45px;
   width: 100%;
 }
 
 @media (min-width: 1024px) {
   nav .nav-buttons {
-    /* justify-content: center; */
     width: auto;
   }
 }
 
-nav .button {
-  padding: 40px 10px;
-  border-top: 3px transparent solid;
+nav .button-one {
+  border-bottom: 3px #dddddd solid;
+  text-align: center;
+  padding: 40px 0 10px 0;
 }
 
-nav .button:hover {
+@media (min-width: 1024px) {
+  nav .button-one {
+    border-bottom: none;
+    border-top: 3px transparent solid;
+    padding: 40px 30px;
+  }
+}
+
+nav .button-two {
+  border-bottom: 3px #dddddd solid;
+  text-align: center;
+  padding: 40px 0 10px 0;
+}
+
+@media (min-width: 1024px) {
+  nav .button-two {
+    border-bottom: none;
+    border-top: 3px transparent solid;
+    padding: 40px 30px;
+  }
+}
+
+nav .button-one:hover {
   transition: all 0.3s ease-in;
   color: #0065fc;
-  border-top: 3px #0065fc solid;
+  border-color: #0065fc;
 }
 
-nav .nav-buttons .sign-up {
+nav .button-two:hover {
+  transition: all 0.3s ease-in;
   color: #0065fc;
-}
-
-nav .nav-buttons .sign-up:hover {
-  text-decoration: underline;
+  border-color: #0065fc;
 }
 
 nav .nav-buttons a {
@@ -160,31 +180,19 @@ nav .nav-buttons a {
   text-decoration: none;
 }
 
-.sign-up.hidden-pc {
-  color: #0065fc;
-  text-decoration: none;
-}
-
-.sign-up.hidden-pc:hover {
-  text-decoration: underline;
-}
-
 /* ------------------- HEADER -------------------- */
 header .header-wrapper {
   background-color: #f2f2f2;
-  padding-bottom: 20px;
+  padding: 20px 30px;
 }
 
 /* ------------------- SEARCHBAR -------------------- */
 .searchbar-wrapper {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   max-width: 25.5rem;
-  max-height: 3rem;
-  padding: 12px 0px;
+  max-height: 10rem;
   border-radius: 1rem;
-  background-color: #dddddd;
 }
 
 .marker-box {
@@ -248,7 +256,7 @@ input[type='search' i] {
 .filters-wrapper {
   display: flex;
   flex-direction: column;
-  padding: 10px 0 40px 0;
+  padding-bottom: 10px;
 }
 
 @media (min-width: 1024px) {
