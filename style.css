@@ -523,7 +523,7 @@ padding-left: 10px;
 /* ------------------- BOTTOM BLOCK -------------------- */
 .bottom-block-wrapper {
   flex-direction: column;
-  padding: 10px 0;
+  padding: 20px 0;
   background-color: #f2f2f2;
 }
 
@@ -531,6 +531,14 @@ padding-left: 10px;
   .bottom-block-wrapper {
     flex-direction: row;
   }
+}
+
+.bottom-block-wrapper {
+  gap: 20px;
+}
+
+.w-full {
+  gap: 20px;
 }
 
 /* ------------------- FOOTER -------------------- */
