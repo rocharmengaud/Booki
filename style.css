@@ -256,7 +256,7 @@ input[type='search' i] {
 .filters-wrapper {
   display: flex;
   flex-direction: column;
-  padding-bottom: 10px;
+  padding: 10px 0 20px 0;
 }
 
 @media (min-width: 1024px) {
@@ -376,7 +376,6 @@ input[type='search' i] {
   border: #f2f2f2 0.3rem solid;
   border-radius: 1.5rem;
   overflow: hidden;
-  margin: 15px;
   box-shadow: 0px 0px 10px #b3b3b3;
 }
 
@@ -421,12 +420,24 @@ input[type='search' i] {
 }
 
 .card .card-text {
-  padding: 0px 10px;
+  display: flex;
+ flex-direction: column;
+ padding: 0 10px 10px 10px;
+}
+
+.card.horizontal .card-text {
+display: flex;
+flex-direction: column;
+padding-left: 10px;
 }
 
 .card .card-price {
-  padding-bottom: 10px;
   margin: 0;
+  padding: 0 0 10px 0;
+}
+
+.card.horizontal .card-price {
+  flex-grow: 1;
 }
 
 .card .card-name {
@@ -435,14 +446,6 @@ input[type='search' i] {
   font-weight: bold;
 }
 
-.card .card-stars {
-  padding-left: 10px;
-  padding-bottom: 10px;
-}
-
-.card.horizontal .card-stars {
-  padding: 0;
-}
 
 /* ------------------- CONTENT BOX -------------------- */
 .content-box {
@@ -453,7 +456,7 @@ input[type='search' i] {
 }
 
 .cards-wrapper {
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 /* ------------------- LEFT BLOCK -------------------- */
@@ -461,6 +464,7 @@ input[type='search' i] {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .cards-wrapper.left .card {
@@ -495,6 +499,7 @@ input[type='search' i] {
 .cards-wrapper.right {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
 .right-block {
