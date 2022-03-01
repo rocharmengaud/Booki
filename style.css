@@ -87,15 +87,30 @@ header {
   margin: 0 auto;
 }
 
-section,
 footer {
-  padding: 20px 20px;
+  padding: 20px 30px;
+}
+
+@media (min-width: 768px) {
+  section, footer {
+    padding: 20px 20px;
+  }
 }
 
 body > footer {
   padding-bottom: 60px;
   background-color: var(--darkgray);
 }
+
+.activity-list {
+    padding: 0px 30px;
+  }
+
+  @media (min-width: 768px) {
+    .activity-list {
+      padding: 20px;
+    }
+  }
 
 /* ------------------- NAVBAR -------------------- */
 nav.navbar-wrapper {
@@ -464,15 +479,33 @@ padding-left: 10px;
 }
 
 /* ------------------- CONTENT BOX -------------------- */
-.content-box {
-  background-color: var(--darkgray);
-  border: var(--darkgray) 1px solid;
-  border-radius: 30px;
+.content-box.left-block {
   padding: 30px;
 }
 
+@media (min-width: 768px) {
+  .content-box.left-block {
+    background-color: var(--darkgray);
+    border: var(--darkgray) 1px solid;
+    border-radius: 30px;
+  }
+}
+
+.content-box.right-block {
+  background-color: var(--darkgray);
+  border: var(--darkgray) 1px solid;
+  border-radius: 0px;
+  padding: 30px;
+}
+
+@media (min-width: 768px) {
+  .content-box.right-block {
+border-radius: 30px;
+  }
+}
+
 .cards-wrapper {
-  padding: 20px 0;
+  padding: 20px 0 30px 0;
 }
 
 /* ------------------- LEFT BLOCK -------------------- */
@@ -501,7 +534,6 @@ padding-left: 10px;
 }
 
 .more a {
-  padding: 8px 0;
   color: var(--black);
   text-decoration: none;
   font-weight: bold;
