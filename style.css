@@ -364,6 +364,12 @@ input[type='search' i] {
 
 @media (min-width: 768px) {
   .housing-wrapper {
+    flex-wrap: wrap-reverse;
+  }
+}
+
+@media (min-width: 992px) {
+  .housing-wrapper {
     flex-wrap: nowrap;
   }
 }
