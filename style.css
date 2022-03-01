@@ -62,7 +62,7 @@ h3 {
   display: none;
 }
 
-/* A PARTIR DE md (768px) on applique ceci */
+/* Si l'ecran est supérieur à (768px) on applique ceci */
 @media (min-width: 768px) {
   .col-25 {
     width: 25%;
