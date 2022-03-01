@@ -58,19 +58,14 @@ h3 {
   font-size: 1.6rem;
 }
 
-@media (min-width: 992px) {
-  .hidden-pc {
-    display: none;
-  }
-}
-
 .hidden {
   display: none;
 }
 
+/* A PARTIR DE md (992px) on applique ceci */
 @media (min-width: 992px) {
-  .hidden {
-    display: block;
+  .col-25 {
+    width: 25%;
   }
 }
 
@@ -83,11 +78,7 @@ h3 {
   --lightblue: #deebff;
   --black: #000;
   --white: #fff;
-
-
 }
-
-
 
 /* ------------------- LAYOUT -------------------- */
 section,
@@ -104,12 +95,6 @@ footer {
 body > footer {
   padding-bottom: 60px;
   background-color: var(--darkgray);
-}
-
-@media (min-width: 992px) {
-  .col-25 {
-    width: 25%;
-  }
 }
 
 /* ------------------- NAVBAR -------------------- */
@@ -263,8 +248,20 @@ input[type='search' i] {
   color: var(--lightgray);
 }
 
+@media (min-width: 992px) {
+  .hidden {
+    display: block;
+  }
+}
+
 .fa-search {
   padding: 0 10px;
+}
+
+@media (min-width: 992px) {
+  .hidden-pc {
+    display: none;
+  }
 }
 
 /* ------------------- FILTERS -------------------- */
@@ -292,14 +289,14 @@ input[type='search' i] {
   gap: 30px;
 }
 
-.filters-wrapper .filter-tag {
-  padding: 20px 60px 20px 0;
-}
-
 @media (min-width: 992px) {
   .filters-wrapper .filters {
     flex-wrap: nowrap;
   }
+}
+
+.filters-wrapper .filter-tag {
+  padding: 20px 60px 20px 0;
 }
 
 .filters-wrapper .filtersbox {
@@ -365,7 +362,6 @@ input[type='search' i] {
   gap: 50px;
 }
 
-/* A PARTIR DE md (992px) on applique ceci */
 @media (min-width: 992px) {
   .housing-wrapper {
     flex-wrap: nowrap;
@@ -405,12 +401,6 @@ input[type='search' i] {
   flex-direction: row;
   height: 8.8rem;
   width: 100%;
-}
-
-@media (min-width: 992px) {
-  .card.tall .card-image {
-    height: 390px;
-  }
 }
 
 .card .card-image {
@@ -461,6 +451,11 @@ padding-left: 10px;
   font-weight: bold;
 }
 
+@media (min-width: 992px) {
+  .card.tall .card-image {
+    height: 390px;
+  }
+}
 
 /* ------------------- CONTENT BOX -------------------- */
 .content-box {
