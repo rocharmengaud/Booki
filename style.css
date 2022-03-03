@@ -271,12 +271,11 @@ input[type='search' i] {
 .search-button {
   padding: 0 20px;
   color: var(--lightgray);
-}
-
-@media (min-width: 768px) {
-  .hidden {
-    display: block;
-  }
+  background-color: var(--darkblue);
+  height: 3rem;
+  border-color: var(--darkblue);
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
 .fa-search {
@@ -286,6 +285,12 @@ input[type='search' i] {
 @media (min-width: 768px) {
   .hidden-pc {
     display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .hidden {
+    display: block;
   }
 }
 
@@ -458,7 +463,7 @@ input[type='search' i] {
 .card .card-text {
   display: flex;
  flex-direction: column;
- padding: 0 10px 10px 10px;
+ padding: 0 10px;
 }
 
 .card.horizontal .card-text {
@@ -600,7 +605,7 @@ border-radius: 30px;
 }
 
 .w-full {
-  gap: 20px;
+  gap: 30px;
 }
 
 /* ------------------- FOOTER -------------------- */
