@@ -479,7 +479,7 @@ input[type='search' i] {
 .card .card-text {
   display: flex;
  flex-direction: column;
- padding: 0 10px;
+ padding: 0 10px 10px 10px;
 }
 
 .card.horizontal .card-text {
