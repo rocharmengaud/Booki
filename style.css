@@ -496,6 +496,14 @@ border-bottom-left-radius: 10px;
  padding: 0 10px 10px 10px;
 }
 
+.card .card-text.bottom {
+ padding: 5px 10px;
+}
+
+.card.grow .card-text.bottom {
+  padding: 2.5px 10px;
+ }
+
 .card.grow .card-text {
   padding: 0 10px 5px 10px;
 }
