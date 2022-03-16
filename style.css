@@ -103,13 +103,17 @@ footer {
 }
 
 section, footer {
-    padding: 20px 20px;
-  }
+  padding: 20px 20px;
+}
 
 @media (max-width: 768px) {
   section, footer {
     padding: 0;
   }
+}
+
+body, header {
+  background-color: var(--white);
 }
 
 body > footer {
@@ -135,12 +139,15 @@ nav.navbar-wrapper {
   justify-content: space-between;
   width: 100%;
   max-width: 1600px;
+}
 
-  background-color: var(--lightgray);
+nav .website-logo  {
+padding-left: 30px;
 }
 
 nav .website-logo img {
   display: block;
+  object-fit: cover;
 }
 
 @media (max-width: 768px) {
@@ -172,6 +179,7 @@ nav .button-one {
     border-top: none;
     text-align: center;
     padding: 40px 0 10px 0;
+    font-weight: bold;
   }
 }
 
@@ -187,6 +195,7 @@ nav .button-two {
     border-top: none;
     text-align: center;
     padding: 40px 0 10px 0;
+    font-weight: bold;
   }
 }
 
@@ -209,7 +218,6 @@ nav .nav-buttons a {
 
 /* ------------------- HEADER -------------------- */
 header .header-wrapper {
-  background-color: var(--lightgray);
   padding: 20px 30px;
 }
 
@@ -242,7 +250,6 @@ header .header-wrapper {
   width: 128px;
   border-top: var(--darkgray) 1.6px solid;
   border-bottom: var(--darkgray) 1.6px solid;
-  background-color: var(--lightgray);
 }
 
 .search-input {
@@ -269,9 +276,9 @@ input[type='search' i] {
   align-items: center;
   height: 48px;
   background-color: var(--darkblue);
-  border: var(--darkblue) 1.6px solid;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -287,6 +294,7 @@ border-bottom-left-radius: 10px;
   background-color: var(--darkblue);
   height: 48px;
   border-color: var(--darkblue);
+  border: none;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -312,7 +320,7 @@ border-bottom-left-radius: 10px;
 .filters-wrapper {
   display: flex;
   flex-direction: row;
-  padding: 10px 0 20px 0;
+  padding: 20px 0;
 }
 
 @media (max-width: 768px) {
@@ -324,11 +332,12 @@ border-bottom-left-radius: 10px;
 .filters-wrapper .filter-tag {
   display: flex;
   align-items: center;
+  font-weight: bold;
 }
 
 .filters-wrapper .filters {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
   gap: 30px;
 }
@@ -352,6 +361,7 @@ border-bottom-left-radius: 10px;
   border-radius: 48px;
   height: 48px;
   padding: 20px 0;
+  white-space: nowrap;
 }
 
 .filtersbox:hover {
@@ -381,7 +391,6 @@ border-bottom-left-radius: 10px;
 
 /* ------------------- INFO BAR -------------------- */
 .info-wrapper {
-  background-color: var(--lightgray);
   display: flex;
   gap: 10px;
   align-items: center;
@@ -409,6 +418,7 @@ border-bottom-left-radius: 10px;
 @media (max-width: 768px) {
   .housing-wrapper {
     flex-wrap: wrap-reverse;
+    gap: 0px;
   }
 }
 
@@ -434,7 +444,7 @@ border-bottom-left-radius: 10px;
   flex-direction: column;
   
   background-color: var(--white);
-  border: var(--lightgray) 4.8px solid;
+  border: var(--white) 4.8px solid;
   border-radius: 24px;
   overflow: hidden;
   box-shadow: 0px 0px 10px var(--shadow);
@@ -486,8 +496,8 @@ border-bottom-left-radius: 10px;
 
 .card.horizontal .card-image {
   height: 100%;
-  width: 33%;
-  min-width: 33%;
+  width: 120px;
+  min-width: 120px;
 }
 
 .card .card-text {
@@ -501,7 +511,7 @@ border-bottom-left-radius: 10px;
 }
 
 .card.grow .card-text.bottom {
-  padding: 2.5px 10px;
+  padding: 5px 10px;
  }
 
 .card.grow .card-text {
@@ -529,6 +539,10 @@ padding-left: 10px;
   font-weight: bold;
 }
 
+.card.tall {
+border: none;
+}
+
 .card.tall a {
     text-decoration: none;
     color: var(--black);
@@ -546,6 +560,7 @@ padding-left: 10px;
 
 .card.grow {
   flex-grow: 0;
+  border: none;
 }
 
 /* ------------------- CONTENT BOX -------------------- */
@@ -560,7 +575,7 @@ padding-left: 10px;
 @media (max-width: 768px) {
   .content-box.left-block {
     padding: 30px;
-    background-color: var(--lightgray);
+    background-color: var(--white);
     border: none;
   }
 }
@@ -593,11 +608,21 @@ border-radius: 0px;
 }
 
 .cards-wrapper.left .card {
-  width: 27%;
+  width: 30%;
 }
 
 .left-block {
   min-width: 600px;
+}
+
+@media (max-width: 768px) {
+  .left-block {
+    min-width: 100%;
+  }
+}
+
+.box-title {
+  padding-left: 20px;
 }
 
 /* 3 cards per lines */
@@ -608,6 +633,7 @@ border-radius: 0px;
 }
 
 .more a {
+  padding-left: 20px;
   color: var(--black);
   text-decoration: none;
   font-weight: bold;
@@ -650,7 +676,7 @@ border-radius: 0px;
 @media (max-width: 768px) {
   .bottom-block-wrapper {
     flex-direction: column;
-    background-color: var(--lightgray);
+    background-color: var(--white);
   }
 }
 
@@ -664,6 +690,7 @@ border-radius: 0px;
 
 /* ------------------- FOOTER -------------------- */
 .footer-wrapper {
+  padding: 0 20px;
   flex-direction: row;
   max-width: 1600px;
   margin: 0 auto;
@@ -675,6 +702,7 @@ border-radius: 0px;
 @media (max-width: 768px) {
   .footer-wrapper {
     flex-direction: column;
+    padding: 0 30px;
   }
 }
 
