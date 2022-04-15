@@ -66,7 +66,7 @@ h3 {
 .overflow {
   overflow: hidden;
   white-space: nowrap;
-text-overflow: ellipsis;
+  text-overflow: ellipsis;
 }
 
 .col-25 {
@@ -102,17 +102,20 @@ footer {
   padding: 20px 30px;
 }
 
-section, footer {
+section,
+footer {
   padding: 20px 20px;
 }
 
 @media (max-width: 768px) {
-  section, footer {
+  section,
+  footer {
     padding: 0;
   }
 }
 
-body, header {
+body,
+header {
   background-color: var(--white);
 }
 
@@ -122,14 +125,14 @@ body > footer {
 }
 
 .activity-list {
-    padding: 20px;
-  }
+  padding: 20px;
+}
 
-  @media (max-width: 768px) {
-    .activity-list {
-      padding: 20px 30px;
-    }
+@media (max-width: 768px) {
+  .activity-list {
+    padding: 20px 30px;
   }
+}
 
 /* ------------------- NAVBAR -------------------- */
 nav.navbar-wrapper {
@@ -143,11 +146,11 @@ nav.navbar-wrapper {
 
 @media (max-width: 768px) {
   nav.navbar-wrapper {
-justify-content: space-around;
+    justify-content: space-around;
   }
 }
 
-nav .website-logo  {
+nav .website-logo {
   padding-left: 30px;
 }
 
@@ -283,8 +286,8 @@ input[type='search' i] {
 
 @media (max-width: 768px) {
   .button-box {
-border-top-left-radius: 10px;
-border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
 }
 
@@ -325,7 +328,7 @@ border-bottom-left-radius: 10px;
 
 @media (max-width: 768px) {
   .filters-wrapper {
-    flex-direction: column
+    flex-direction: column;
   }
 }
 
@@ -439,12 +442,11 @@ border-bottom-left-radius: 10px;
 .card {
   display: flex;
   flex-direction: column;
-  
+
   background-color: var(--white);
   border: var(--white) 4.8px solid;
   border-radius: 24px;
   overflow: hidden;
-  box-shadow: 0px 0px 10px var(--shadow);
 }
 
 .card a {
@@ -563,7 +565,7 @@ border-bottom-left-radius: 10px;
 /* ------------------- CONTENT BOX -------------------- */
 .content-box.left-block {
   padding: 30px;
-  
+
   background-color: var(--darkgray);
   border: var(--darkgray) 1px solid;
   border-radius: 30px;
@@ -588,7 +590,7 @@ border-bottom-left-radius: 10px;
 
 @media (max-width: 768px) {
   .content-box.right-block {
-border-radius: 0px;
+    border-radius: 0px;
   }
 }
 
